@@ -1,9 +1,14 @@
 # Field Manual
-This is a gathering of information I have decide to collect.
+I dont't like learing stuff twice (though sometimes I do).
 
-I don't like learning things more than once. [Though it happens]
+<a href="#Linx">\<Linux\><br /></a>
+<a href="#Windows">\<Windows\><br /></a>
+<a href="#Wi-Fi">\<Wi-Fi\><br /></a>
+<a href="#Other">\<Other\><br /></a>
 
-Not entirely sure how it will be organized. 
+<p id="Linux">Linux</p>
+<p id="Windows">Windows</p>
+<p id="Wi-Fi">Wi-Fi</p>
+<p id="Other">Other</p>
 
---- This commit is with VS Code.
 
