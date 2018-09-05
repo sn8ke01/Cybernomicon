@@ -1,6 +1,6 @@
-Attacking Network Protocols by James Forshaw 
+# Attacking Network Protocols by James Forshaw #
 
-Simple Setup Notes
+## Simple Setup Notes
 
 Install .NET Core SDK version 1.1.x (be OS specific..)
 	Source:: GitHub: https://github.com/dotnet/core/blob/master/release-notes/download-archive.md
