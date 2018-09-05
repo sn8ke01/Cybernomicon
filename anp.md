@@ -11,9 +11,9 @@ Install .NET Core SDK version 1.1.x (be OS specific..)
 
 Download and unzip
 
-	CANAPE.Core_netcoreapp1.1_v1.0.7z: https://github.com/tyranid/CANAPE.Core/releases/ 
-	Listings: https://nostarch.com/download/anp_listings.zip
-	SuperFunkyChatCore_netcoreapp1.1_v1.0.2.7z: https://github.com/tyranid/ExampleChatApplication/releases
+	**CANAPE Files**:: CANAPE.Core_netcoreapp1.1_v1.0.7z: https://github.com/tyranid/CANAPE.Core/releases/ 
+	**Book Files:: Listings: https://nostarch.com/download/anp_listings.zip
+	Example Chat:: SuperFunkyChatCore_netcoreapp1.1_v1.0.2.7z: https://github.com/tyranid/ExampleChatApplication/releases
 	
 Uninstall .NET [if needed]
 
