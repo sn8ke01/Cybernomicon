@@ -5,10 +5,8 @@ These are my notes of the book of the same name by by **James Forshaw** (https:/
 ## Simple Setup Notes
 
 Install .NET Core SDK version 1.1.x (be OS specific..)
-| Source | Link |
-|:---------|------|
-| Windows | https://www.microsoft.com/net/download/dotnet-core/1.1|
-| GitHub | https://github.com/dotnet/core/blob/master/release-notes/download-archive.md |
+Windows:: https://www.microsoft.com/net/download/dotnet-core/1.1
+GitHub:: https://github.com/dotnet/core/blob/master/release-notes/download-archive.md 
 
 Download and unzip
 	CANAPE.Core_netcoreapp1.1_v1.0.7z: https://github.com/tyranid/CANAPE.Core/releases/ 
