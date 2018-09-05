@@ -1,4 +1,6 @@
-# Attacking Network Protocols by James Forshaw #
+# Attacking Network Protocols  #
+
+These are my notes of the book of the same name by by **James Forshaw** (https://nostarch.com/networkprotocols)
 
 ## Simple Setup Notes
 
