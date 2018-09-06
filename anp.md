@@ -25,3 +25,19 @@ ABove 3 files | This repo | **attacking_network_protocols_dirs.tgz** (md5: e5d9f
 
 	https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/uninstall/dotnet-uninstall-pkgs.sh
 
+**attacking_newtworking_protocols_dir.tgz** dir layout
+```bash
++anp
+  +--->canape
+  |      |
+  |      +--------> CANAPE.Core_netcoreapp1.1_v1.0.7z [fully extracted]
+  |
+  +--->listings
+  |      |
+  |      +--------> anp_listings.zip [fully extracted]
+  |
+  +--->superfunkychat
+         |
+         +--------> SuperFunkyChatCore_netcoreapp1.1_v1.0.2.7z [fully extracted]
+  
+```
