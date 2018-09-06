@@ -6,10 +6,10 @@ These are my notes of the book of the same name by by **James Forshaw** (https:/
 
 **Install .NET Core SDK version 1.1.x**
 
-Source | Link
----|---
-Windows | [Dotnet Core v1.1](https://www.microsoft.com/net/download/dotnet-core/1.1)
-GitHub | [Dotnet Core Archive {various}](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)
+Source | OS | Link
+---|---|---
+Windows | Various | [Dotnet Core v1.1](https://www.microsoft.com/net/download/dotnet-core/1.1)
+GitHub |  Various | [Dotnet Core Archive {various}](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)
  
 
 **Download and unzip**
