@@ -1,5 +1,5 @@
 # Field Manual
-I dont't like learing stuff twice (though sometimes I do).
+I don't like learning stuff twice (though sometimes I do).
 
 <a href="Linux/Linux.md" title=Linux>\<Linux\><br /></a>
 <a href="#Windows">\<Windows\><br /></a>
