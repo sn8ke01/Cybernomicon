@@ -27,7 +27,7 @@ ABove 3 files | This repo | **attacking_network_protocols_dirs.tgz** (md5: e5d9f
 
 **attacking_newtworking_protocols_dir.tgz** dir layout
 ```bash
-+anp
+anp
   +--->canape
   |      |
   |      +--------> CANAPE.Core_netcoreapp1.1_v1.0.7z [fully extracted]
