@@ -1,6 +1,36 @@
 # Linux Odds and Ends #
+## Some Basic User Admin
+```bash
+#Add user with custom home dir, shell, and groups
+$>user='<user_name'
+$>groups='group_names'
+$> useradd -m -d /home/$user -s /bin/bash -U $user -G $groups
+$> useradd -m -d /home/{} -s /bin/bash -U {} -G 
 
-## Bash Promtps
+#Change users name and home directory - Must be in /home.  This will create new home dir in current working directory.
+$> usermod -l newname -d /home/newname -m oldname
+
+#Add user to existing group
+$> usermod -aG <group> <user>
+
+#Change group name
+$> groupmod --new-name <new grp name> <old grp name>
+
+#Remove user from Group
+$> gpasswd -d user group
+
+#Delete user and home directory
+$> userdel -r user
+
+#Create /home for a user that already exists
+ $> mkhomedir_helper <user>
+
+#force user logoff
+$> who  #Shows user pts/# sessions
+$> ps -dN |grep pts/0 #get PID of session to terminate!
+$> kill -9 7679 #kill session and force logoff
+``` 
+## Bash Prompts
 ```bash
 #Short hostname & working dir <may be some color issues>
 PS1="\[\e[0;31m\]\u@\[\e[m\]\[\e[1;34m\]\h-\[\e[m\]\e[0;32m\](\w) \[\e[0;31m\]\$ \[\e[m\]" 
@@ -32,4 +62,20 @@ openssl rsa -in privateKey.pem -out newPrivateKey.pem
 
 # All Cert Info
 echo | openssl s_client -connect google.com:443 2>/dev/null | openssl x509 -noout -text
+```
+
+### SCP & RSYNC
+```bash
+#SCP: PULL -- Secure Copy from a file/dir from a remote host to your local host
+$> scp user@remote_host.com:/some/remote/directory ~/my_local_file.txt
+
+#SCP: PUSH -- Secure Copy from a file/dir from your local host to remote host
+$> scp -r /etc/skel/. user@remote_host:/etc/skel
+
+#SCP: Secure copy with a private key
+$> scp -i /path/to/key [rest of appropriate PULL or PUSH]
+
+#RSYNC: Copy from a remote location to localhost - only new files.
+$> rsync -avute 'ssh' user@$remote_host:/path/to/dir/* .
+
 ```
