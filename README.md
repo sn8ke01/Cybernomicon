@@ -8,4 +8,4 @@ I don't like learning stuff twice (though sometimes I do).
 <a href="#Scripting">\<Scripting\><br /></a>
 
 
-Currently only **Linux** and **Attacking Network Protocols** has something.
+Currently only **Linux** and **Attacking Network Protocols** have something.
