@@ -3,7 +3,7 @@
 ```bash
 #Add user with custom home dir, shell, and groups
 $> user='user_name'
-$> groups='group_names'
+$> groups='group_names' #comma seperated :: sudo,whales,justice_leauge
 $> useradd -m -d /home/$user -s /bin/bash -U $user -G $groups
 
 #Change users name and home directory - Must be in /home.  This will create new home dir in current working directory.
