@@ -2,10 +2,9 @@
 ## Some Basic User Admin
 ```bash
 #Add user with custom home dir, shell, and groups
-$>user='<user_name'
-$>groups='group_names'
+$> user='<user_name'
+$> groups='group_names'
 $> useradd -m -d /home/$user -s /bin/bash -U $user -G $groups
-$> useradd -m -d /home/{} -s /bin/bash -U {} -G 
 
 #Change users name and home directory - Must be in /home.  This will create new home dir in current working directory.
 $> usermod -l newname -d /home/newname -m oldname
@@ -27,8 +26,8 @@ $> userdel -r user
 
 #force user logoff
 $> who  #Shows user pts/# sessions
-$> ps -dN |grep pts/0 #get PID of session to terminate!
-$> kill -9 7679 #kill session and force logoff
+$> ps -dN |grep pts/<num> #get PID of session to terminate
+$> kill -9 PID #kill session and force logoff
 ``` 
 ## Bash Prompts
 ```bash
