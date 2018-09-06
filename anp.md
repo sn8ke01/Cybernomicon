@@ -6,10 +6,14 @@ These are my notes of the book of the same name by by **James Forshaw** (https:/
 
 **Install .NET Core SDK version 1.1.x**
 
-	Windows:: https://www.microsoft.com/net/download/dotnet-core/1.1
-	GitHub:: https://github.com/dotnet/core/blob/master/release-notes/download-archive.md 
+Source | Link
+---|---
+Windows | [Dotnet Core v1.1](https://www.microsoft.com/net/download/dotnet-core/1.1)
+GitHub | [Dotnet Core Archive {various}](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)
+ 
 
 **Download and unzip**
+
 Name | Source | File | Link
 ---|---|---|---
 CANAPE Core | Github | **CANAPE.Core_netcoreapp1.1_v1.0.7z** | [Tyranid: CANAPE.Core](https://github.com/tyranid/CANAPE.Core/releases/download/v1.0/CANAPE.Core_netcoreapp1.1_v1.0.7z)
