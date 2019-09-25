@@ -54,7 +54,7 @@ nmaprun/host/hostscript/script/@id
 xmlstarlet sel -t -m "//host/hostscript/script[@id='smb-vuln-cve2009-3103']/../../address[@addrtype='ipv4']" -n -v "@addr" table.xml
 ```
 
-### OpenSSL
+## OpenSSL
 ```bash
 #Remove a passphrase from a private key
 openssl rsa -in privateKey.pem -out newPrivateKey.pem
@@ -63,7 +63,7 @@ openssl rsa -in privateKey.pem -out newPrivateKey.pem
 echo | openssl s_client -connect google.com:443 2>/dev/null | openssl x509 -noout -text
 ```
 
-### SCP & RSYNC
+## SCP & RSYNC
 ```bash
 #SCP: PULL -- Secure Copy from a file/dir from a remote host to your local host
 $> scp user@remote_host.com:/some/remote/directory ~/my_local_file.txt
