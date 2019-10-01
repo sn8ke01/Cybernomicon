@@ -42,7 +42,7 @@ PS1="\n\[\e[30;1m\]\[\016\]-\[\017\](\[\e[34;1m\]\u@\h\[\e[30;1m\])\[\017\]-(\[\
 ```bash
 xmlstarlet el table.xml             #Path information      
 xmlstarlet el -a table.xml          #Attributes
-xmlstarlet el -a table.xml          #Attributes and Values
+xmlstarlet el -v table.xml          #Attributes and Values
 ```
 ### _Nmap host script Xpath_
 ```bash
