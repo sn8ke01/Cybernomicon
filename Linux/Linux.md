@@ -22,7 +22,7 @@ $> gpasswd -d user group
 $> userdel -r user
 
 #Create /home for a user that already exists
- $> mkhomedir_helper <user>
+$> mkhomedir_helper <user>
 
 #force user logoff
 $> who  #Shows user pts/# sessions
