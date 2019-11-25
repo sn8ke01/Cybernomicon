@@ -1,5 +1,4 @@
 # Field Manual
-I don't like learning stuff twice (though sometimes I do).
 
 <a href="anp.md" title="Attacking Network Protocols">\<Attacking Network Protocols\><br /></a>
 <a href="Linux/Linux.md" title=Linux>\<Linux\><br /></a>
