@@ -3,7 +3,11 @@
 ```bash
 #Add user with custom home dir, shell, and groups
 $> user='user_name'
+<<<<<<< HEAD
 $> groups='group_names'
+=======
+$> groups='group_names' #comma seperated :: sudo,whales,justice_leauge
+>>>>>>> 2b4f3fade2118faed5659b2a4f967d3dfc899aa2
 $> useradd -m -d /home/$user -s /bin/bash -U $user -G $groups
 
 #Change users name and home directory - Must be in /home.  This will create new home dir in current working directory.
@@ -22,7 +26,7 @@ $> gpasswd -d user group
 $> userdel -r user
 
 #Create /home for a user that already exists
- $> mkhomedir_helper <user>
+$> mkhomedir_helper <user>
 
 #force user logoff
 $> who  #Shows user pts/# sessions
@@ -42,7 +46,7 @@ PS1="\n\[\e[30;1m\]\[\016\]-\[\017\](\[\e[34;1m\]\u@\h\[\e[30;1m\])\[\017\]-(\[\
 ```bash
 xmlstarlet el table.xml             #Path information      
 xmlstarlet el -a table.xml          #Attributes
-xmlstarlet el -a table.xml          #Attributes and Values
+xmlstarlet el -v table.xml          #Attributes and Values
 ```
 ### _Nmap host script Xpath_
 ```bash
@@ -54,7 +58,7 @@ nmaprun/host/hostscript/script/@id
 xmlstarlet sel -t -m "//host/hostscript/script[@id='smb-vuln-cve2009-3103']/../../address[@addrtype='ipv4']" -n -v "@addr" table.xml
 ```
 
-### OpenSSL
+## OpenSSL
 ```bash
 #Remove a passphrase from a private key
 openssl rsa -in privateKey.pem -out newPrivateKey.pem
@@ -63,7 +67,7 @@ openssl rsa -in privateKey.pem -out newPrivateKey.pem
 echo | openssl s_client -connect google.com:443 2>/dev/null | openssl x509 -noout -text
 ```
 
-### SCP & RSYNC
+## SCP & RSYNC
 ```bash
 #SCP: PULL -- Secure Copy from a file/dir from a remote host to your local host
 $> scp user@remote_host.com:/some/remote/directory ~/my_local_file.txt
