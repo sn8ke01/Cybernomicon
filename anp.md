@@ -14,7 +14,7 @@ GitHub |  Various | [Dotnet Core Archive {various}](https://github.com/dotnet/co
 
 **Download and unzip**
 
-Name | Source | File | Link
+Name | Source | File Name | Link
 ---|---|---|---
 CANAPE Core | Github | **CANAPE.Core_netcoreapp1.1_v1.0.7z** | [Tyranid: CANAPE.Core](https://github.com/tyranid/CANAPE.Core/releases/download/v1.0/CANAPE.Core_netcoreapp1.1_v1.0.7z)
 SuperFunkyChat | Github |**SuperFunkyChatCore_netcoreapp1.1_v1.0.2.7z** | [Tyranid: SuperFunkyChat](https://github.com/tyranid/ExampleChatApplication/releases/download/v1.0.2/SuperFunkyChatCore_netcoreapp1.1_v1.0.2.7z)

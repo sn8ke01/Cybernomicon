@@ -2,7 +2,7 @@
 ## Some Basic User Admin
 ```bash
 #Add user with custom home dir, shell, and groups
-$> user='<user_name'
+$> user='user_name'
 $> groups='group_names'
 $> useradd -m -d /home/$user -s /bin/bash -U $user -G $groups
 
