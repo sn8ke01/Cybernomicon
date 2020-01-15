@@ -32,6 +32,18 @@ cookie: id=eccbc87e4b5ce2fe28308fd9f2a7baf3
 
 </details>
 
+<details><summary>Hidden Code BLock</summary>
+<p>
+
+#### yes, even hidden code blocks!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
+
 
 
 
