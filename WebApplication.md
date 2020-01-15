@@ -16,7 +16,8 @@ Host: hostname
 ## Cookies
 
 <details><summary>Cookies are composed of?</summary>
-    Key:Value Pairs
+   
+  **Key:Value** Pairs
 
 ```html
 cookie: id=eccbc87e4b5ce2fe28308fd9f2a7baf3
@@ -26,10 +27,13 @@ cookie: id=eccbc87e4b5ce2fe28308fd9f2a7baf3
 
 ## XSS
 
-**Types**
+<details><summary>**Types**</summary>
+
 1. Reflected
 2. Stored (persistant)
 3. DOM-based [very difficult to mitigate]
+
+</details>
 
 **Finding XSS**
 Figure out where it goes. Does it get mebedded in a tag attribute? Does it get put into a string in a script tag?  Does user input do directly into the page in any way?
