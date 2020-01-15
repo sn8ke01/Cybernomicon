@@ -27,7 +27,7 @@ cookie: id=eccbc87e4b5ce2fe28308fd9f2a7baf3
 
 ## XSS
 
-<details><summary>**Types**</summary>
+**<details><summary>Types</summary>**
 
 1. Reflected
 2. Stored (persistant)
