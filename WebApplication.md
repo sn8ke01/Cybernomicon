@@ -36,9 +36,9 @@ cookie: id=eccbc87e4b5ce2fe28308fd9f2a7baf3
 </details>
 
 **Finding XSS**
-Figure out where it goes. Does it get mebedded in a tag attribute? Does it get put into a string in a script tag?  Does user input do directly into the page in any way?
-Figure out any special handiling: Do URLs get turned into links, like posts?
-Figure out how special characters are handled: Input something like `'<>:;"`
+1. Figure out where it goes. Does it get mebedded in a tag attribute? Does it get put into a string in a script tag?  Does user input do directly into the page in any way?
+2. Figure out any special handiling: Do URLs get turned into links, like posts?
+3. Figure out how special characters are handled: Input something like `'<>:;"`
 
 **XSS** Tricks
 `"><h1>test</h1>`
