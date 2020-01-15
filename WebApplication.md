@@ -25,9 +25,11 @@ Cookies are composed of key:value pairs
     Key:Value Pairs
 
 <p>
+
 ```html
 cookie: id=eccbc87e4b5ce2fe28308fd9f2a7baf3
 ```
+
 </p>
 
 </details>
