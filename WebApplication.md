@@ -24,6 +24,7 @@ cookie: id=eccbc87e4b5ce2fe28308fd9f2a7baf3
 
 
 ```
+
 <details>
   <summary>Click to expand!</summary>
   
@@ -33,6 +34,7 @@ cookie: id=eccbc87e4b5ce2fe28308fd9f2a7baf3
      * With some
      * Sub bullets
 </details>
+
 ```
 
 
