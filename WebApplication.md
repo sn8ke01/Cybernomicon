@@ -13,39 +13,43 @@ GET /index.php HTTP/1.1
 Host: hostname
 ```
 
-## Cookie
-
-Cookies are composed of key:value pairs
-
-
-
-## Collapsible Mardown
+## Cookies
 
 <details><summary>Cookies are composed of?</summary>
     Key:Value Pairs
-
-<p>
 
 ```html
 cookie: id=eccbc87e4b5ce2fe28308fd9f2a7baf3
 ```
 
-</p>
 
-</details>
+## XSS
 
-<details><summary>Hidden Code BLock</summary>
-<p>
+**Types**
+1. Reflected
+2. Stored (persistant)
+3. DOM-based [very difficult to mitigate]
 
-#### yes, even hidden code blocks!
+**Finding XSS**
+Figure out where it goes. Does it get mebedded in a tag attribute? Does it get put into a string in a script tag?  Does user input do directly into the page in any way?
+Figure out any special handiling: Do URLs get turned into links, like posts?
+Figure out how special characters are handled: Input something like `'<>:;"`
 
-```python
-print("hello world!")
-```
+**XSS** Tricks
+`"><h1>test</h1>`
+`'+alert(1)+'`
+`"onmouseover="alert(1)`
+`http://"onmouseover="alert(1)`
 
-</p>
-</details>
+## Authentation Bypass Technique
 
+Auth-Z _or_ Direct Object Reference
+
+> Are admin components enumerable?
+
+1. Perform as many actions as possible as as the highest level user possible
+2. Record/track the requests
+3. Replay requests as a low privileged user with altered session ID/CSRF token as needed
 
 
 
