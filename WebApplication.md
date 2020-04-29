@@ -27,7 +27,7 @@ cookie: id=eccbc87e4b5ce2fe28308fd9f2a7baf3
 
 ## XSS
 
-**<details><summary>Types</summary>**
+<details><summary>**Types**</summary>
 
 1. Reflected
 2. Stored (persistant)
@@ -35,12 +35,16 @@ cookie: id=eccbc87e4b5ce2fe28308fd9f2a7baf3
 
 </details>
 
-**Finding XSS**
+<details><summary>**Finding XSS**</summary>
 1. Figure out where it goes. Does it get mebedded in a tag attribute? Does it get put into a string in a script tag?  Does user input do directly into the page in any way?
 2. Figure out any special handiling: Do URLs get turned into links, like posts?
 3. Figure out how special characters are handled: Input something like `'<>:;"`
 
-**XSS** Tricks
+</details>
+
+
+
+<details><summary>**XSS Tricks**</summary>
 
 `"><h1>test</h1>`
 
@@ -49,6 +53,8 @@ cookie: id=eccbc87e4b5ce2fe28308fd9f2a7baf3
 `"onmouseover="alert(1)`
 
 `http://"onmouseover="alert(1)`
+
+</details>
 
 
 ## Authentation Bypass Technique
