@@ -15,7 +15,9 @@ Application uses an URL parameter to send a **GET** request to the destination U
 
 In the below example the redirect paramerter is **redirect_to=** but is could be any number of things.
 
-`https://www.google.com/?redirect_to=https://www.attacker.com`
+```html
+https://www.google.com/?redirect_to=https://www.attacker.com
+```
 
 Other paramerters to look out for:
 **url=**
@@ -26,6 +28,16 @@ Other paramerters to look out for:
 HTML <meta> tag instructs the browser to refresh and make a **GET** request to a URL.
 ```html
 <meta http-equiv="refresh" content="0; url=https://evil.com/">
+```
+This becomes a problem when the attacker can control what the `content` attribute and inject their own URL.
+
+#### DOM (document object model)
+The DOM is an API for the HTML and XML documents.  Attacker can redirect users to super evil URLs via JavaScript by inejecting a URL int the `window.location` property.
+
+```javascript
+window.location = https://www.google.com
+window.location.href = https://evil.com
+window.location.replace(https://E.Corp)
 ```
 
 #### Open Redirect Detection

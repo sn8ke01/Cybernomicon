@@ -15,11 +15,3 @@ Small collection to [Linux commands](Linux/Linux.nd)
 
 ## Scripting
 Collection of scripts that can be used for a variety of tasks
-
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
-```
