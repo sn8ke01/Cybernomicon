@@ -34,6 +34,8 @@ This becomes a problem when the attacker can control what the `content` attribut
 #### DOM (document object model)
 The DOM is an API for the HTML and XML documents.  Attacker can redirect users to super evil URLs via JavaScript by inejecting a URL int the `window.location` property.
 
+> The DOM Open Redirect requires the attacker be able to execute JavaScript ethier via XXS or an intential user specifiec URL.
+
 ```javascript
 window.location = https://www.google.com
 window.location.href = https://evil.com
