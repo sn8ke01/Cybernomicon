@@ -1,7 +1,9 @@
 # Real World Bug Hunting 
 > Notes from the book of the same name by **Pete Yaworski** (https://nostarch.com/bughunting)
 
-## Open (Unvalidated) Redirects
+1. [Open Redirect](#openre)
+
+## Open (Unvalidated) Redirects {#openre}
 
 > The visited website sends the user's browser to a different URL that could exist in another domain.  This process can be highjacked by a malicous user and send a user to an evil website w/o the user being aware.
 
