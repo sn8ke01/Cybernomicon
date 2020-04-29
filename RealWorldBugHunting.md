@@ -1,5 +1,7 @@
 # Real World Bug Hunting 
 > Notes from the book of the same name by **Pete Yaworski** (https://nostarch.com/bughunting)
+> The book includes a ton of real world examples pulled from bug bounty reports.  Those examples will not be included in these notes.
+
 
 1. [Open Redirect](#openre)
 
