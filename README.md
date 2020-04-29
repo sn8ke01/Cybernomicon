@@ -1,7 +1,5 @@
 ![Cybernomicon](images/cyber2.png)
 
-# Cybernomicon
-
 ## Attacking Network Protocols
 This [book ](AP.md) provides intruction on application analysis of the network traffic produced by that application.
 
