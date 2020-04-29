@@ -13,5 +13,5 @@ Collection of scripts that can be used for a variety of tasks
 
 ## Active Directory
 Collection of notes about AD, AD Recon, and AD Attack.
-[Gerneral AD Information](AttackingActiveDirectory/ActiveDirectory.md)
+[Gerneral AD Information](ActiveDirectory/ActiveDirectory.md)
 
