@@ -16,3 +16,10 @@ Collection of notes about AD, AD Recon, and AD Attack.
 ## Scripting
 Collection of scripts that can be used for a variety of tasks
 
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
