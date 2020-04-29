@@ -1,4 +1,4 @@
-![Cybernomicon](images/cyber.png)
+![Cybernomicon](images/cyber2.png)
 
 # Cybernomicon
 
