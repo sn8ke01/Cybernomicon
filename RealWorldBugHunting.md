@@ -24,7 +24,7 @@ Other paramerters to look out for:
 
 #### HTML <meta> Tag
 
-**Open Redirect Detection**
+#### ==Open Redirect Detection==
 Status Code of 3xx.  Typical Status Code of **302** but any 3xx.
 
 Monitor your proxy for **GET** requests sent to the sire you're testing that includes the site you are testing.
