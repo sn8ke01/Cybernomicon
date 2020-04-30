@@ -1,11 +1,14 @@
 # Active Directory Overview
-> 95% of Fortune 1000 companies use AD
+> Active Directory is a Windows-based directory service that allows for the centralized managment of authentication and authorization.
+> It is meant to give admins the ability to deploy role-based access control and least privilage efficently.
 
 - Active Directory (AD) stores information related to objects such as computers and users. It is a link between objects and values.  
 - Authentication using Kerberos tickets.
 - Non Windows devices, like Linux, can also authenticate to AD via RADIUS and LDAP.
 - Many features of AD can be abused w/o ever going after CVEs or other patchable exploits.
+- _LDAP_ also matters whenever a query or modification to the Directory Service needs to happen.  [LDAP Notes HERE](https://www.tldp.org/HOWTO/LDAP-HOWTO/whatisldap.html)
 
+**95% of Fortune 1000 companies use AD**
 
 ## Components
 **Domain Controller (DC)** a server with the AD DS server role installed that has been specifically promoted to domain controller.
