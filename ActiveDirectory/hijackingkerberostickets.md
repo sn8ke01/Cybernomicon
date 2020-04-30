@@ -55,7 +55,7 @@ The `-t` was for output format but in `msf5>` it is `-f`
 
 The `-f` was for output filename but in `msf5>` it is `-o`
 
-**Simple HTML page** te server the HTA file just created
+**== Simple HTML page ==** te server the HTA file just created
 ```html
 <html>
 <head>
