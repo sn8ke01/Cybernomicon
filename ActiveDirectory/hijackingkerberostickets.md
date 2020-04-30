@@ -55,7 +55,10 @@ The `-t` was for output format but in `msf5>` it is `-f`
 
 The `-f` was for output filename but in `msf5>` it is `-o`
 
-**[+] Simple HTML page** to server the HTA file just created
+**[+] Simple HTML page** to server the HTA file just created.
+
+*Auto Execute* will only take place in IE and Edge browsers.
+
 ```html
 <html>
 <head>
