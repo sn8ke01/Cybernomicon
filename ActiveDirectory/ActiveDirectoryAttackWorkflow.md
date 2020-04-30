@@ -1,4 +1,5 @@
-# 2.3 Red Team oriented Recon & Enum
+# 2.3 Red Teaming Active Directory
+> This describes the workflow/process for attacking an Active Directory env
 
 Main tools [for this module] 
 
