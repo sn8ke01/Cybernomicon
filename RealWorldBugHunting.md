@@ -1,13 +1,21 @@
+---
+​---
+layout: post
+title: Hunting like Elmer
+​---
+---
+
 # Real World Bug Hunting 
 > Notes from the book of the same name by **Pete Yaworski** (https://nostarch.com/bughunting)
 > The book includes a ton of real world examples pulled from bug bounty reports.  Those examples will not be included in these notes.
 
+[TOC]
 
-1. [Open Redirect](#openre)
 
-## [Open Redirects]{#openre}
 
-> The visited website sends the user's browser to a different URL that could exist in another domain.  This process can be highjacked by a malicous user and send a user to an evil website w/o the user being aware.
+## Open Redirects
+
+> The visited website sends the user's browser to a different URL that could exist in another domain.  This process can be highjacked by a malicious user and send a user to an evil website w/o the user being aware.
 
 There are 3 main types of Open Redirects
 1. URL Parameter
@@ -47,6 +55,6 @@ window.location.replace(https://E.Corp)
 ```
 
 #### Open Redirect Detection
-Status Code of ==3xx==.  Typical Status Code of **302** but any 3xx.
+Status Code of 3xx.  Typical Status Code of **302** but any 3xx.
 
 Monitor your proxy for **GET** requests sent to the sire you're testing that includes the site you are testing.
