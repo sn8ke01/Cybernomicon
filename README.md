@@ -10,6 +10,10 @@ Collection of notes about AD, AD Recon, and AD Attack.
 
 Small collection  [Linux commands](BooksLinux/Linux.nd "Linux")
 
+## Books
+
+---
+
 ### Real World Bug Hunting
 
 This is somewhat of a field guide for Web Application bug bounty hunting.  It uses disclosed reports of real-world bung hunts to teach the various vulnerabilities.
@@ -20,5 +24,7 @@ This is somewhat of a field guide for Web Application bug bounty hunting.  It us
 This book teaches analysis techniques of the network traffic produced by an application.
 [Notes here](AP.md)
 
-## Scripting
+## Other
+
+### Scripting
 Collection of scripts
