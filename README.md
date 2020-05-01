@@ -13,22 +13,17 @@ Small collection  [Linux commands](Linux/Linux.md "Linux")
 
 ## Technical Books
 
-### Real World Bug Hunting
+* [Real World Bug Hunting](RealWorldBugHunting.md):
+	This is somewhat of a field guide for Web Application bug bounty hunting.
+	It uses disclosed reports of real-world bung hunts to teach the various vulnerabilities.
 
-This is somewhat of a field guide for Web Application bug bounty hunting.  It uses disclosed reports of real-world bung hunts to teach the various vulnerabilities.
-[Notes here](RealWorldBugHunting.md)
+* [Attacking Network Protocols](AttackingNetworkProtocols/README.md): 
+	This book teaches analysis techniques of the network traffic produced by an application.
 
-### Attacking Network Protocols
-
-This book teaches analysis techniques of the network traffic produced by an application.
-[Notes here](AttackingNetworkProtocols/README.md)
-
-## Other
-
-### Scripting
+## Scripting
 Collection of scripts
 
-### Books that Just May Grant Super Powers
+## Books that Just May Grant Super Powers
 (without the need to consume radio active material or lie to your loved ones to "protect" them).
 
 Summaries will be coming soon. I just have to get them written.
@@ -38,7 +33,7 @@ Summaries will be coming soon. I just have to get them written.
 * Black Box Thinking by Matthew Syed
 * Range: Why Generalists Triupmp in a Specialized World by DAvid Epstien (No, this one is not dead either)
 
-### Random Course Notes
+## Random Course Notes
 * [Learning How to Learn from Coursea:](https://www.coursera.org/learn/learning-how-to-learn) 
 	This course teaches you .. how to learn.  It's a meta course that is kind of a paradox.
 	It covers topics such as the **Illision of Competence**, **Chunking**, **Memory**, and **Interleaving**.
