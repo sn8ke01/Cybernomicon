@@ -28,7 +28,7 @@ This book teaches analysis techniques of the network traffic produced by an appl
 ### Scripting
 Collection of scripts
 
-### Books that just may provide Super Powers
+### Books that Just May Grant Super Powers
 (without the need to consume radio active material or lie to your loved ones to "protect" them).
 
 Summaries will be coming soon. I just have to get them written.
