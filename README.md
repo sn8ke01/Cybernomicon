@@ -4,7 +4,7 @@
 
 ## Active Directory
 Collection of notes about AD, AD Recon, and AD Attack.
-[Gerneral AD Information](ActiveDirectory/ActiveDirectory.md)
+[Gerneral AD Information](ActiveDirectory/README.md)
 
 ## Linux
 
