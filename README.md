@@ -39,7 +39,7 @@ Summaries will be coming soon. I just have to get them written.
 * Range: Why Generalists Triupmp in a Specialized World by DAvid Epstien (No, this one is not dead either)
 
 ### Random Course Notes
-* [Learning How to Learn from Coursea](https://www.coursera.org/learn/learning-how-to-learn)
+* [Learning How to Learn from Coursea:](https://www.coursera.org/learn/learning-how-to-learn) 
 	This course teaches you .. how to learn.  It's a meta course that is kind of a paradox.
 	It covers topics such as the **Illision of Competence**, **Chunking**, **Memory**, and **Interleaving**.
 
