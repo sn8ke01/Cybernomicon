@@ -8,7 +8,7 @@ Collection of notes about AD, AD Recon, and AD Attack.
 
 ## Linux
 
-Small collection  [Linux commands](BooksLinux/Linux.nd "Linux")
+Small collection  [Linux commands](Linux/Linux.md "Linux")
 
 ## Books
 
@@ -20,7 +20,7 @@ This is somewhat of a field guide for Web Application bug bounty hunting.  It us
 ### Attacking Network Protocols
 
 This book teaches analysis techniques of the network traffic produced by an application.
-[Notes here](AP.md)
+[Notes here](AttackingNetworkProtocols/README.md)
 
 ## Other
 
