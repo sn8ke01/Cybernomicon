@@ -1,8 +1,6 @@
 ---
-​---
 layout: post
 title: Hunting like Elmer
-​---
 ---
 
 # Real World Bug Hunting 
