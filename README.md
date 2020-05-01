@@ -31,7 +31,7 @@ Summaries will be coming soon. I just have to get them written.
 * Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts by Annie Duke
 * Antifragile by Massim Taleb
 * Black Box Thinking by Matthew Syed
-* Range: Why Generalists Triupmp in a Specialized World by DAvid Epstien (No, this one is not dead either)
+* Range: Why Generalists Triumph in a Specialized World by David Epstien (No, this one is not dead either)
 
 ## Random Course Notes
 * [Learning How to Learn from Coursea:](https://www.coursera.org/learn/learning-how-to-learn) 
