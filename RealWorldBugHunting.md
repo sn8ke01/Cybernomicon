@@ -59,4 +59,4 @@ window.location.replace(https://E.Corp)
 #### Open Redirect Detection
 Status Code of 3xx.  Typical Status Code of **302** but any 3xx.
 
-Monitor your proxy for **GET** requests sent to the sire you're testing that includes the site you are testing.
+Monitor your proxy for **GET** requests sent to the site you're testing.
