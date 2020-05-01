@@ -1,6 +1,6 @@
 ![Cybernomicon](images/cyber2.png)
 
-
+---
 
 ## Active Directory
 Collection of notes about AD, AD Recon, and AD Attack.
