@@ -64,5 +64,29 @@ Monitor your proxy for **GET** requests sent to the site you're testing.
 
 ## XML External Entity Injection
 
-> What is an XML External Entity??? 
+> Allows an attacker to get all up in the business of an application's processing of XML data.  It can allow an attacker to view app server filesystems and interact with any backend or external system the application can process.
+>
+> In short, it takes advantage of how the application processes the inclusion of external entities in its input.
+
+### Document Type Definitions (DTD)
+
+The DTD define what elements can exists, what attributes can be there, and which elements can be enclosed within other elements.  DTD if defined using the `<!Doctype>` element. Each element that is going to be used in the XML document is defined in the DTD using the `!Element` keyword.  There are 2 types of DTD:
+
+1. <u>External</u>: An external .dtd file the XML document references & fetches. 
+2. <u>Internal</u>: The DTD exists within the XML document.
+
+[LEARN MORE ABOUT XML & DTD](https://portswigger.net/web-security/xxe/xml-entities)
+
+### XML Entities
+
+An entity is a place holder for information (like a variable in a script).  For example if we wanted to put a URL in the XML multiple times we can instead declare that URL with the DTD `!Element` tag.
+
+```xml
+<!Element WEBSITE ANY>
+<!Element url SYSTEM "website.txt">
+...
+<Website>&url;</Website>
+```
+
+### XXE Injection Attack
 
