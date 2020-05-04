@@ -36,5 +36,5 @@ Summaries will be coming soon. I just have to get them written.
 ## Random Course Notes
 * [Learning How to Learn from Coursea:](https://www.coursera.org/learn/learning-how-to-learn) 
 	This course teaches you .. how to learn.  It's a meta course that is kind of a paradox.
-	It covers topics such as the **Illision of Competence**, **Chunking**, **Memory**, and **Interleaving**.
+	It covers topics such as the Illusion of Competence**, **Chunking**, **Memory**, and **Interleaving**.
 

@@ -12,6 +12,7 @@ Table of Contents
 =============
 
 * [Open Redirects](#open-redirects)
+* [XML External Entity Injection](#xml-external-entity-injection)
 
 
 
@@ -60,3 +61,8 @@ window.location.replace(https://E.Corp)
 Status Code of 3xx.  Typical Status Code of **302** but any 3xx.
 
 Monitor your proxy for **GET** requests sent to the site you're testing.
+
+## XML External Entity Injection
+
+> What is an XML External Entity??? 
+
