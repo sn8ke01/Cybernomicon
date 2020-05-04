@@ -39,7 +39,7 @@ Other paramerters to look out for:
 **next=**
 **r=**
 
-#### HTML <meta> Tag
+#### HTML `<meta>` Tag
 HTML <meta> tag instructs the browser to refresh and make a **GET** request to a URL.
 ```html
 <meta http-equiv="refresh" content="0; url=https://evil.com/">
