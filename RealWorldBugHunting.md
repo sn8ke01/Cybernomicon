@@ -64,7 +64,9 @@ Monitor your proxy for **GET** requests sent to the site you're testing.
 
 ## XML External Entity Injection
 
-> Allows an attacker to get all up in the business of an application's processing of XML data.  It can allow an attacker to view app server filesystems and interact with any backend or external system the application can process.
+> This attack abuses systems that parse XML input.
+>
+> It allows an attacker to get all up in the business of an application's processing of XML data.  It can allow an attacker to view app server filesystems and interact with any backend or external system the application can process.
 >
 > In short, it takes advantage of how the application processes the inclusion of external entities in its input.
 
@@ -88,5 +90,22 @@ An entity is a place holder for information (like a variable in a script).  For 
 <Website>&url;</Website>
 ```
 
+Abusing XML entities is a primary attack path for XXE Injection.
+
 ### XXE Injection Attack
+
+In this example injection attack taken from [PayloadsAllTheThings]([https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XXE%20Injection#classic-xxe](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XXE Injection#classic-xxe))- you would want to find a webapp that alows file uploads and upload an xml file containing the following code...
+
+```xml
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE foo [  
+  <!ELEMENT foo ANY >
+  <!ENTITY xxe SYSTEM "file:///c:/boot.ini" >]><foo>&xxe;</foo>
+```
+
+
+
+
+
+
 
