@@ -94,7 +94,7 @@ Abusing XML entities is a primary attack path for XXE Injection.
 
 ### XXE Injection Attack
 
-In this example injection attack taken from [PayloadsAllTheThings]([https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XXE%20Injection#classic-xxe](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XXE Injection#classic-xxe))- you would want to find a webapp that alows file uploads and upload an xml file containing the following code...
+In this example injection attack taken from [PayloadsAllTheThings]([https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XXE%20Injection#classic-xxe)- you would want to find a webapp that alows file uploads and upload an xml file containing the following code...
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1"?>
