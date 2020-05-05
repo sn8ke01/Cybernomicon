@@ -9,8 +9,6 @@ title: Hunting like Elmer
 
 [![Awesome](https://img.shields.io/badge/Peter%20Yaworski-RealWorld%20Bug%20Hunting-green)](https://nostarch.com/bughunting)
 
-[![Test](https://img.shields.io/badge/search%20space-Google-blueviolet)](www.google.com)
-
 Table of Contents
 
 =============
