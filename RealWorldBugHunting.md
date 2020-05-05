@@ -7,6 +7,12 @@ title: Hunting like Elmer
 > Notes from the book of the same name by **Pete Yaworski** (https://nostarch.com/bughunting)
 > The book includes a ton of real world examples pulled from bug bounty reports.  Those examples will not be included in these notes.
 
+![Something](D:\GitProjects\my-smarter-site\images\GryffindorBBQ-logo.png)
+
+![https://img.shields.io/badge/test-TEST-green]
+
+
+
 Table of Contents
 
 =============
@@ -28,7 +34,7 @@ There are 3 main types of Open Redirects
 #### URL Parameter
 Application uses an URL parameter to send a **GET** request to the destination URL.
 
-In the below example the redirect paramerter is **redirect_to=** but is could be any number of things.
+In the below example the redirect parameter is **redirect_to=** but is could be any number of things.
 
 ```html
 https://www.google.com/?redirect_to=https://www.attacker.com
