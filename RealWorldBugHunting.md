@@ -4,14 +4,11 @@ title: Hunting like Elmer
 ---
 
 # Real World Bug Hunting 
-> Notes from the book of the same name by **Pete Yaworski** (https://nostarch.com/bughunting)
+> Notes from the book of the same name by **Pete Yaworski**.
 > The book includes a ton of real world examples pulled from bug bounty reports.  Those examples will not be included in these notes.
 
-[![Awesome](https://img.shields.io/badge/Book-RealWorldBugHunting-green)](https://nostarch.com/bughunting)
-
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-
-[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![Awesome](https://img.shields.io/badge/Peter%20Yaworski-RealWorld%20Bug%20Hunting-green)](https://nostarch.com/bughunting)
+[![Test](https://img.shields.io/badge/s%20s-test-green)](www.google.com)
 
 Table of Contents
 
