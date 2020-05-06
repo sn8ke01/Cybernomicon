@@ -14,7 +14,8 @@ Table of Contents
 =============
 
 * [Open Redirects](#open-redirects)
-* [XML External Entity Injection](#xml-external-entity-injection)
+* [XML External Entity Injection](#xml-external-entity-injection) [*Incomplete Section*]
+* [Cross-Site Request Forgery](#csrf) (CSRF)
 
 
 
@@ -105,7 +106,15 @@ In this example injection attack taken from [PayloadsAllTheThings]([https://gith
   <!ENTITY xxe SYSTEM "file:///c:/boot.ini" >]><foo>&xxe;</foo>
 ```
 
+## CSRF
 
+Cross-Site Request Forgery happens when an attacker can make the victim's browser send and HTTP request to another website that then performs the action as if it were valid and sent by the victim (user).  In order for the attack to be performed the victim must be authenticated to the website the attacker will send the HTTP request to.
+
+If the victim is a low lever authenticated user of the web application that receives the poorly trusted HTTP request the attacker can accomplish various tasks like password and email changes, fund transfers, and modify other server-side information.  If the victim is an authenticated admin the attacker can takeover the entire web application.
+
+---
+
+When you log into an application the app needs to be able to track the state of that authentication (in or out so to speak) otherwise the you would have to re-authenticate to each new restricted page. Needless to say, some ways of tracking this state are better than others.  
 
 
 
