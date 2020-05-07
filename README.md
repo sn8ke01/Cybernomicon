@@ -22,7 +22,7 @@ I would like to grow this list into something that is a little more relevant to 
 
 ## Technical Books
 
-* [Real World Bug Hunting](Books/RealWorldBugHunting/RealWorldBugHunting.md "The holistic approach to bug hunting!!"):
+* [Real World Bug Hunting](Books/RealWorldBugHunting/Readme.md "The holistic approach to bug hunting!!"):
 	This is somewhat of a field guide for Web Application bug bounty hunting.
 	It uses disclosed reports of real-world bung hunts to teach the various vulnerabilities.
 
