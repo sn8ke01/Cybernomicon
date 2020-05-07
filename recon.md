@@ -1,4 +1,4 @@
-# target:
+# Recon It ALL
 
 - [ ] Robots.txt
 - [ ] URLs
@@ -37,7 +37,7 @@ Create a list of related domains.  This can be done with a variety of tools.
 
 ## Sub Domains
  - Identify subdomains: *.tesla.com *=wildcard. 
- 
+
 **Sublist3r** `python sublist3r.py -e google,yahoo,virustotal -d $domain`
 This may need to be installed.
 ```bash
