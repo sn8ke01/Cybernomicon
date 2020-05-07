@@ -37,10 +37,12 @@ In the below example the redirect parameter is **redirect_to=** but is could be 
 https://www.google.com/?redirect_to=https://www.attacker.com
 ```
 
-Other paramerters to look out for:
-**url=**
-**next=**
-**r=**
+Other parameters to look out for:
+```http
+url=
+next=
+r=
+```
 
 #### HTML `<meta>` Tag
 HTML <meta> tag instructs the browser to refresh and make a **GET** request to a URL.
