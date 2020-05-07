@@ -7,7 +7,7 @@ On going, ever growing list of notes without commentary (mostly).
 
 This is simple external recon process to kick off any pentest/assessment.
 
-[Recon Process](Recon.md "Recon Process Checklist")
+[Recon Process](Recon.md "Hail to the Recon")
 
 ## Active Directory
 
@@ -16,7 +16,7 @@ Collection of notes about AD, AD Recon, and AD Attack.
 
 ## Linux
 
-Small collection  [Linux commands](Linux/Linux.md "Linux")
+Small collection  [Linux commands](Linux/Linux.md "Give me some Linux baby.")
 
 I would like to grow this list into something that is a little more relevant to cyber but my time is as premium as a Tesla  Cyber Truck and I have a tendency to exaggerate every single little thing. 
 
