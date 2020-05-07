@@ -1,4 +1,4 @@
-![Cybernomicon](images/cyber2.png)
+![Cybernomicon](images/cyber2.png "Klaatu Barada NNNNNNecktie.")
 [![Test](https://img.shields.io/badge/search%20space-Google-blueviolet)](www.google.com)
 ---
 On going, ever growing list of notes without commentary (mostly).
