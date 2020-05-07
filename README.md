@@ -3,7 +3,14 @@
 ---
 On going, ever growing list of notes without commentary (mostly).
 
+## Recon Process
+
+This is simple external recon process to kick off any pentest/assessment.
+
+[Recon Process](Recon.md "Recon Process Checklist")
+
 ## Active Directory
+
 Collection of notes about AD, AD Recon, and AD Attack.
 [Gerneral AD Information](ActiveDirectory/README.md)
 
@@ -11,13 +18,15 @@ Collection of notes about AD, AD Recon, and AD Attack.
 
 Small collection  [Linux commands](Linux/Linux.md "Linux")
 
+I would like to grow this list into something that is a little more relevant to cyber but my time is as premium as a Tesla  Cyber Truck and I have a tendency to exaggerate every single little thing. 
+
 ## Technical Books
 
-* [Real World Bug Hunting](RealWorldBugHunting.md):
+* [Real World Bug Hunting](Books/RealWorldBugHunting.md "See it all here!"):
 	This is somewhat of a field guide for Web Application bug bounty hunting.
 	It uses disclosed reports of real-world bung hunts to teach the various vulnerabilities.
 
-* [Attacking Network Protocols](AttackingNetworkProtocols/README.md): 
+* [Attacking Network Protocols](Books/AttackingNetworkProtocols/README.md "How many roads must a man walk down?"): 
 	This book teaches analysis techniques of the network traffic produced by an application.
 
 ## Scripting
