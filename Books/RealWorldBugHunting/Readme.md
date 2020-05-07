@@ -1,6 +1,6 @@
 # Real-World Bug Hunting Summary
 
->  A quick of the attacks described in the book.  More detailed information can be found [here](RealWorldBugHunting.md "Why is all the rum gone?")
+>  A summa of the attacks described in the book.  More detailed information can be found [here](RealWorldBugHunting.md "Why is all the rum gone?")
 
 ## Open Redirect
 
