@@ -11,7 +11,7 @@ This is simple external recon process to kick off any pentest/assessment.
 
 ## Active Directory
 
-Collection of notes about AD, AD Recon, and AD Attack.
+Collection of notes about AD, AD Recon, and AD Attack. 
 [Gerneral AD Information](ActiveDirectory/README.md "The time loop starts here.")
 
 ## Linux
