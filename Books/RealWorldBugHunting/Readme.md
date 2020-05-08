@@ -23,7 +23,7 @@ This allows a pirate to inject content into the website.  Think HTML elements.  
 
 For example a *Search* function/feature doesn't properly sanitize and the pirate can get the site to render something like this `<h4> This is a test</h4>` would actually get rendered onto the page.  See the possibilities?  Do you see? Do you see?
 
-## Carrage Return & Line Feed Injection
+## Carriage Return & Line Feed Injection
 
 CR & LF characters have special meaning and need to be properly sanitized. [Imagine how many dirty pirates would be stopped if we just properly sanitized?]  If a server does not deal with them properly they can be injected and a pirate can manipulate how the server handles the HTTP messages.
 
