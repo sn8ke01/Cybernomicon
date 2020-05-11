@@ -101,3 +101,6 @@ When the pirate can modify an object's ID and then gain access to resources they
 
 Poor implementation of Oath can introduce bugs that could allow pirates to steal authorization tokens.
 
+## Operation Logic and Configuration Vulnerabilities
+
+This stuff it totally the developers fault. 
