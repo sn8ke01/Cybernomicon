@@ -43,7 +43,7 @@ Summaries will be coming soon. I just have to get them written.
 * Range: Why Generalists Triumph in a Specialized World by David Epstien (No, this one is not dead either)
 
 ## Random Course Notes
-* [Learning How to Learn from Coursea:](https://www.coursera.org/learn/learning-how-to-learn "An Epic saga of meta learning.  They can take our tuna but they can never take our ability to learn!!") {:target="_blank"}
+* [Learning How to Learn from Coursea](https://www.coursera.org/learn/learning-how-to-learn "An Epic saga of meta learning.  They can take our tuna but they can never take our ability to learn!!") {:target="_blank"}
 	This course teaches you .. how to learn.  It's a meta course that is kind of a paradox.
 	It covers topics such as the Illusion of Competence**, **Chunking**, **Memory**, and **Interleaving**.
 
