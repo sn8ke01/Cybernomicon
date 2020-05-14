@@ -24,7 +24,15 @@ Get a list of robots.txt for analysis. Look for potential targets for further in
 ## URLs
 Get a list of URLs for further investigation.
 
+**waybackurls** outputs to JSON format.
+
 `python waybackurls.py`
+
+Pasre the JSON with `jq`
+
+```bash
+cat somefile-waybackurls.json | jq -r '.[] |@tsv'
+```
 
 ## Domains
 Create a list of related domains.  This can be done with a variety of tools.
