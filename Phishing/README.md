@@ -10,3 +10,7 @@
 
 [Abusing Office Capabilities](AbusingOfficeCapabilites.md)
 
+[Prebuilt Office Document](Prebuilt-officedocs): A variety of office documents with "malicious" macros that just need to be updated with the correct *victim* and *evil* domains and IPs.
+
+
+
