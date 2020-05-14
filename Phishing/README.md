@@ -1,16 +1,12 @@
-# PXT
-Pen-testing Extreme (PXT) course notes and scripts
+# Phishing and Attack Vectors
 
-<a href="Email Delivery Fundies.md" title="Email Delivery Fundamentals">1.2.1 Email Delivery Fundamentals<br /></a>
 
-<a href="Macro Fundies.md" title="Macro Fundamentals">1.2.2 Macro Fundamentals<br /></a>
 
-<a href="Attack Vectors Development.md" title="Attack Vectors Development">1.3 Attack Vector Development<br /></a>
+[Email Delivery Fundementals](EmailDeliveryFundies.md)
 
-<a href="Abusing Office Capabilites.md" title="Abusing Office Capabilities">1.3.2 Abusing Office Capabilities<br /></a>
+[Attack Vector Development](AttackVectorDevelopment.md)
 
-<a href="walkthroughs/walkthroughs.md" title="Attack Development Walkthroughs">Attack Development Walkthroughs<br /></a>
+[Macro Fundementals](MacroFundies.md)
 
-<a href="scripts" title="scripts">Course Scripts<br /></a>
+[Abusing Office Capabilities](AbusingOfficeCapabilities.md)
 
-<a href="githubList.md" title="github repos ref'd in course">Github Repo List<br /></a>
