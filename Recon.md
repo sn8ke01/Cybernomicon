@@ -73,6 +73,31 @@ Locate sub sub domains for further investigation.
 
 **Sub checks with EyeWitness** `python EyeWitness.py -f $subdomain.list`
 
+### Email Protection
+
+**SPF:** Verifies sender IP address but is not capable of verifying the message content.
+
+```bash
+dig +short TXT example.com
+"v=spf1 -all"
+```
+
+**DKIIM:** Used by mail server to sign the message and content.
+
+```dig
+dig +short TXT dkim._domainkey.twitter.com
+"v=DKIM1; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrZ6zwKHLkoNpHNyPGwGd8wZoNZOk5buOf8wJwfkSZsNllZs4jTNFQLy6v4Ok9qd46NdeRZWnTAY+lmAAV1nfH6ulBjiRHsdymijqKy/VMZ9Njjdy/+FPnJSm3+tG9Id7zgLxacA1Yis/18V3TCfvJrHAR/a77Dxd65c96UvqP3QIDAQAB"
+```
+
+**DMARC:** Announce SPF & DKIM usage and instruct mail server in event of failed check.
+
+```bash
+dig +short TXT _dmarc.wordpress.com
+"v=DMARC1; p=quarantine; pct=100; rua=mailto:0bqp2jnw@ag.dmarcian.com; ruf=mailto:0bqp2jnw@fr.dmarcian.com;"
+```
+
+
+
 ### Onine Resource
 
 https://www.yougetsignal.com/
