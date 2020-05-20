@@ -15,7 +15,8 @@ Table of Contents
 
 * [Open Redirects](#open-redirects)
 * [XML External Entity Injection](#xml-external-entity-injection) [*Incomplete Section*]
-* [Cross-Site Request Forgery](#csrf) (CSRF)
+* [Cross-Site Request Forgery](#csrf)
+* [HTTP Parameter Pollution](#HTP)
 
 
 
@@ -52,7 +53,7 @@ HTML <meta> tag instructs the browser to refresh and make a **GET** request to a
 This becomes a problem when the attacker can control what the `content` attribute and inject their own URL.
 
 #### DOM (document object model)
-The DOM is an API for the HTML and XML documents.  Attacker can redirect users to super evil URLs via JavaScript by inejecting a URL int the `window.location` property.
+The DOM is an API for the HTML and XML documents.  Attacker can redirect users to super evil URLs via JavaScript by interjecting a URL into the `window.location` property.
 
 > The DOM Open Redirect requires the attacker be able to execute JavaScript ethier via XXS or an intential user specifiec URL.
 
@@ -95,7 +96,7 @@ An entity is a place holder for information (like a variable in a script).  For 
 <Website>&url;</Website>
 ```
 
-Abusing XML entities is a primary attack path for XXE Injection.
+:bomb: Abusing XML entities is a primary attack path for XXE Injection.
 
 ### XXE Injection Attack
 
@@ -117,6 +118,8 @@ If the victim is a low lever authenticated user of the web application that rece
 ---
 
 When you log into an application the app needs to be able to track the state of that authentication (in or out so to speak) otherwise the you would have to re-authenticate to each new restricted page. Needless to say, some ways of tracking this state are better than others.  
+
+## HTP
 
 
 
