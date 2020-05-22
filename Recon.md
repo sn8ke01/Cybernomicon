@@ -99,10 +99,10 @@ dig +short TXT _dmarc.wordpress.com
 
 Send an email to a bad address, ex `foobar44848@target.com`, and review the response looking for each of the above passing or not being existent.
 
-```html
+```http
 dkim=pass header.i=@googlemail.com header.s=20161025 header.b=GctV4oku;
-       spf=pass (google.com: best guess record for domain of postmaster@mail-sor-f69.google.com designates 209.85.220.69 as permitted sender) smtp.helo=mail-sor-f69.google.com;
-       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=googlemail.com
+spf=pass (google.com: best guess record for domain of postmaster@mail-sor-f69.google.com designates 209.85.220.69 as permitted sender) smtp.helo=mail-sor-f69.google.com;
+dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=googlemail.com
 ```
 
 ### Onine Resource
