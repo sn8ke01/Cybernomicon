@@ -5,6 +5,7 @@
 - [ ] Domains
 - [ ] Sub Domains
 - [ ] Sub Sub Domains 
+- [ ] Email Protection
 - [ ] IP & BGP
 - [ ] JS Files
 - [ ] API Endpoints
@@ -73,7 +74,7 @@ Locate sub sub domains for further investigation.
 
 **Sub checks with EyeWitness** `python EyeWitness.py -f $subdomain.list`
 
-### Email Protection
+## Email Protection
 
 **SPF:** Verifies sender IP address but is not capable of verifying the message content.
 
@@ -96,7 +97,13 @@ dig +short TXT _dmarc.wordpress.com
 "v=DMARC1; p=quarantine; pct=100; rua=mailto:0bqp2jnw@ag.dmarcian.com; ruf=mailto:0bqp2jnw@fr.dmarcian.com;"
 ```
 
+Send an email to a bad address, ex `foobar44848@target.com`, and review the response looking for each of the above passing or not being existent.
 
+```html
+dkim=pass header.i=@googlemail.com header.s=20161025 header.b=GctV4oku;
+       spf=pass (google.com: best guess record for domain of postmaster@mail-sor-f69.google.com designates 209.85.220.69 as permitted sender) smtp.helo=mail-sor-f69.google.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=googlemail.com
+```
 
 ### Onine Resource
 
