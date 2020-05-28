@@ -48,10 +48,11 @@ dig +short TXT dkim._domainkey.twitter.com
 
 DMARC is a standard that will allow an owner to perform:
 1. Announce DKIM and SPF usage
-2. Adive other mail servers on action in the event a message fails a check
+2. Advise other mail servers on action in the event a message fails a check
 
 *Lookup DMARC record*
 $> dig +short TXT _dmarc.domain.tld
+
 ```
 dig +short TXT _dmarc.wordpress.com
 ```

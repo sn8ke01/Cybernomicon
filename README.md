@@ -22,7 +22,7 @@ Collection of notes about AD, AD Recon, and AD Attack.
 
 Small collection  [Linux commands](Linux/Linux.md "Give me some Linux baby.")
 
-I would like to grow this list into something that is a little more relevant to cyber but my time is as premium as a Tesla  Cyber Truck and I have a tendency to exaggerate every single little thing. 
+I would like to grow this list into something that is a little more relevant to cyber but my time is as premium as a Tesla Cyber Truck and I have a tendency to exaggerate every single little thing. 
 
 ## Technical Books
 
@@ -31,10 +31,10 @@ I would like to grow this list into something that is a little more relevant to 
 	It uses disclosed reports of real-world bung hunts to teach the various vulnerabilities.
 
 * [Attacking Network Protocols](Books/AttackingNetworkProtocols/README.md "How many roads must a man walk down?"): 
-	This book teaches analysis techniques of the network traffic produced by an application.
+	This book teaches analysis techniques of network traffic produced by an application.
 
 ## Scripting
-Collection of scripts
+This is currently the Alexandrian Collection of scripts.
 
 ## Books that Just May Grant Super Powers
 (without the need to consume radio active material or lie to your loved ones to "protect" them).
@@ -43,7 +43,7 @@ Summaries will be coming soon. I just have to get them written.
 
 * Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts by Annie Duke
 * Antifragile by Massim Taleb
-* Black Box Thinking by Matthew Syed
+* Black Box Thinking by Matthew Syed (Think airplane not Darwin)
 * Range: Why Generalists Triumph in a Specialized World by David Epstien (No, this one is not dead either)
 
 ## Random Course Notes
