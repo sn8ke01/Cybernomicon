@@ -57,7 +57,7 @@ The `-f` was for output *filename* but in `msf5>` it is `-o`
 
 
 ## 2. HTA File is Executed
-**[+] Simple HTML page** to serve the HTA file just created.  Name it whatever but for here it will be refered to as `index.html`.
+**[+] Simple HTML page** to serve the HTA file just created.  Name it whatever but for here it will be referred to as `index.html`.
 
 *Auto Execute* will only take place in IE and Edge browsers.
 
