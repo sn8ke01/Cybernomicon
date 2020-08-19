@@ -14,9 +14,11 @@ This is simple external recon process to kick off any pentest/assessment.
 Collection of notes about AD, AD Recon, and AD Attack. 
 [Gerneral AD Information](ActiveDirectory/README.md "The time loop starts here.")
 
-## Phishing Attack Fundamentals
+## Phishing Attack
 
 [Phishing Fundamentals](Phishing/README.md): This is phishing fundamentals and some other associated attack vector descriptions like multi-stage payload phishing attack. 
+
+[GoPhish Landing Pages](Phishing/LandingPages): HTML and images for creating landing pages for the GoPhish phishing framework.
 
 ## Linux
 
