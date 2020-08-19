@@ -16,9 +16,9 @@ Collection of notes about AD, AD Recon, and AD Attack.
 
 ## Phishing Attack
 
-[Phishing Fundamentals](Phishing/README.md): This is phishing fundamentals and some other associated attack vector descriptions like multi-stage payload phishing attack. 
+[Phishing Fundamentals](Phishing/README.md "hook., line, sinker"): This is phishing fundamentals and some other associated attack vector descriptions like multi-stage payload phishing attack. 
 
-[GoPhish Landing Pages](Phishing/LandingPages): HTML and images for creating landing pages for the GoPhish phishing framework.
+[GoPhish Landing Pages](Phishing/LandingPages "Doppelgänger"): HTML and images for creating landing pages for the GoPhish phishing framework.
 
 ## Linux
 
@@ -33,10 +33,10 @@ I would like to grow this list into something that is a little more relevant to 
 	It uses disclosed reports of real-world bung hunts to teach the various vulnerabilities.
 
 * [Attacking Network Protocols](Books/AttackingNetworkProtocols/README.md "How many roads must a man walk down?"): 
-	This book teaches analysis techniques of network traffic produced by an application.
+	This book teaches techniques to analyze application network traffic.
 
 ## Scripting
-This is currently the Alexandrian Collection of scripts.
+This is currently the Alexandrian Collection of scripts. [:fire:][:lighthouse:] 
 
 ## Books that Just May Grant Super Powers
 (without the need to consume radio active material or lie to your loved ones to "protect" them).
