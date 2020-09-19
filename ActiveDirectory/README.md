@@ -14,5 +14,5 @@ Here is a quick and dirty AD Lab setup.  [LAB NOTES](ActiveDirectoryLabBuild.md)
 
 ## Active Directory Recon
 
-
+[AD Recon](ActiveDirectoryRecon.md)
 

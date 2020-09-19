@@ -1,4 +1,4 @@
-# 2.3 Red Teaming Active Directory
+# Red Teaming Active Directory
 > This describes the workflow/process for attacking an Active Directory env
 
 Main tools [for this module] 
