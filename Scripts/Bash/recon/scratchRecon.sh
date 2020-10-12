@@ -21,10 +21,12 @@ info="$YEL[i]$NC"
 other="$PUR[*]$NC"
 done="$GRN[*]$NC"
 
+d="$1"
+
 ########### Usage & Help #############
 
 usage(){
-	echo -e "$alert Usage: scratchRecon.sh <domain>"
+	echo -e "$alert Usage: scratchRecon.sh <domain> -aw"
 		
 	echo -e "OPTIONS (all optional)
 	-h	This Help
