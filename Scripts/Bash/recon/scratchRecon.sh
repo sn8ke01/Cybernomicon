@@ -55,7 +55,7 @@ wpscan(){
 
 ########## Script Options ############
 
-while getopts "htr" opt; do
+while getopts "haw" opt; do
 	case ${opt} in
 		a ) amass ;;
 		w ) wpscan ;;
