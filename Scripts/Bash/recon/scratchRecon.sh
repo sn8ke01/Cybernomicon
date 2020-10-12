@@ -55,13 +55,13 @@ testTwo(){
 
 ########## Script Options ############
 
-while getopts "h" opt; do
+while getopts "htr" opt; do
 	case ${opt} in
 		a ) amass ;;
 		w ) wpscan ;;
 		t ) testOne ;;
 		r ) testTwo ;;
-		h ) usage ;;
+		h ) usage && exit 1;;
 		
 	esac
 done
