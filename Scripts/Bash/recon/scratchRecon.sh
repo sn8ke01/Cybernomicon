@@ -2,9 +2,10 @@
 # Author: Manny Capello
 # Function: Simple wrapper script to streamline a few recon commands
 # Note: Nutin facny
-######## TODO ########################
+######## Implemented Tools ############
 
-# [] Todo items
+# Amass
+# WPSCAN
 
 ######################################
 
@@ -31,6 +32,9 @@ usage(){
 	-w	wordpress scan"
 }
 
+invalid(){
+	echo -e "$alert Invalid Option: ${OPTARG}"
+
 ########## Functions #################
 
 # Amass #
@@ -47,37 +51,19 @@ wpscan(){
 		wpscan --url $d --enumerate ap
 	}
 
-testOne(){
-	echo "Test One"
-	}
-	
-testTwo(){
-	echo "Test Two"
-	}
-
 ########## Script Options ############
 
-while getopts ":htr" opt; do
+while getopts "htr" opt; do
 	case ${opt} in
 		a ) amass ;;
 		w ) wpscan ;;
-		t ) testOne ;;
-		r ) testTwo ;;
 		h ) usage && exit 1;;
-		\? ) echo "Invalid option: ${OPTARG}" 1>&2;;
-		:  ) echo "Missing option argument for -$OPTARG" >&2; exit 1;;
-		
+		\? )invalid 1>&2;;		
 	esac
 done
 
 ######################################
 
-
-
-
-echo -e "$alert Danger Will Robinson"
-echo -e "$info Some information"
-echo -e "$other OTHER"
-echo -e "$done This task has completed. Enjoy a coke"
+exit
 
 
