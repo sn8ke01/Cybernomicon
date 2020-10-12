@@ -36,7 +36,7 @@ usage(){
 
 invalid(){
 	echo -e "$alert Invalid Option: ${OPTARG}"
-
+}
 ########## Functions #################
 
 # Amass #
