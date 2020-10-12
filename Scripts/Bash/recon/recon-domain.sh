@@ -94,7 +94,7 @@ dclean(){
 
 cert_curl(){
 	echo "[+] Getting Cert infor for $domain"
-	curl "https://api.certspotter.com/v1/issuances?domain=$domain&include_subdomains=true&expand=dns_names&expand=issuer&expand=cert"
+	curl "https://api.certspotter.com/v1/issuances?domain=$domain&include_subdomains=true&expand=dns_names&expand=issuer&expand=cert" | tee -a $domain.certInfo.json
 }
 
 while getopts "d:o:ha" opt; do
