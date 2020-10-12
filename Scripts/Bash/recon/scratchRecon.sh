@@ -25,8 +25,10 @@ done="$GRN[*]$NC"
 usage(){
 	echo -e "$alert Usage: scratchRecon.sh <domain>"
 		
-	echo -e "OPTIONS
-	-h	This Help"
+	echo -e "OPTIONS (all optional)
+	-h	This Help
+	-a 	amass scan
+	-w	wordpress scan"
 }
 
 ########## Functions #################
@@ -55,13 +57,15 @@ testTwo(){
 
 ########## Script Options ############
 
-while getopts "htr" opt; do
+while getopts ":htr" opt; do
 	case ${opt} in
 		a ) amass ;;
 		w ) wpscan ;;
 		t ) testOne ;;
 		r ) testTwo ;;
 		h ) usage && exit 1;;
+		\? ) echo "Invalid option: ${OPTARG}" 1>&2;;
+		:  ) echo "Missing option argument for -$OPTARG" >&2; exit 1;;
 		
 	esac
 done
