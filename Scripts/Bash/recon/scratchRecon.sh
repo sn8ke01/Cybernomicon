@@ -26,7 +26,7 @@ d="$1"
 ########### Usage & Help #############
 
 usage(){
-	echo -e "$alert Usage: scratchRecon.sh <domain> -aw"
+	echo -e "$info Usage: scratchRecon.sh <domain> -aw"
 		
 	echo -e "OPTIONS (all optional)
 	-h	This Help
