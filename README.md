@@ -3,6 +3,14 @@
 ---
 On going, ever growing list of notes without commentary (mostly).
 
+## Arcane Spells, Hexes, and Curses
+
+This will be a slightly better organized work of dangerous digital incantations with references to the below topic when appropriate. Careful not to get bit.
+
+[Offensive Spells](SpellBook/README.md "Klaatu Barada NNNNNNecktie")
+
+[Defensive Spells](dir/README.md "Not here yet")
+
 ## Recon Process
 
 This is simple external recon process to kick off any pentest/assessment.
