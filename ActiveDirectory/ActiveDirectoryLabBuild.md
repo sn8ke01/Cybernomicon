@@ -7,6 +7,7 @@
 
 - Windows Server 2019 x 1 --> [Windows Evaluation Center: Server 2019](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019)
 - Windows 10 Enterprise x 2 --> [Windows Evaluation Center: Win 10 Enterprise](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise)
+- Windows "Edge" VMs --> [Windows Virtual Machines](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
 
 **Hardware**
 

