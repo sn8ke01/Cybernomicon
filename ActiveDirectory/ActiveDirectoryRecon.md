@@ -88,6 +88,8 @@ accountExpires                     Property              System.Int64 accountExp
 
 **List Users of X Group:PV::** `get-NetGroupMember -GroupName 'Domain Admins'`
 
+**List User Description Field:PS::**`dsquery * -filter "(&(objectCategory=person)(objectClass=user)(!userAccountControl:1.2.840.113556.1.4.803:=2))" -attr sAMAccountName name title department description -limit 0 > users.txt`
+
 **List Users where Description contains "built":FP**
 ```poweshell
 finD-USerFiElD -SeARchfiEld Description -sEaRCHtErm "built"
