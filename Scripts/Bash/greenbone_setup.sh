@@ -1,4 +1,38 @@
-echo "Ubuntu 20.04 Greenbone GVM 11 Install Script"
+#####################################
+# Author: Multi
+# Function: Install Greenbone from source 
+# Note: Works on Ubuntu 20.04
+######## TODO ########################
+
+# 
+
+######################################
+
+RED='\033[1;31m' # Warning and Alerts
+GRN='\033[1;32m' # Success 
+YEL='\033[1;33m' # Doing work
+BLU='\033[1;34m' # File or Dir names
+PUR='\033[1;35m' # Other
+NC='\033[0m' 	 # No Color
+
+alert="$RED[!]$NC"
+info="$YEL[i]$NC"
+other="$PUR[*]$NC"
+done="$GRN[*]$NC"
+
+########### Usage & Help #############
+
+usage(){
+	echo -e "$alert Usage: rolling-profile.sh [OPTION]"
+		
+	echo -e "OPTIONS
+	-h	This Help"
+}
+
+
+echo -e "${info} Ubuntu 20.04 Greenbone GVM 11 Install Script"
+echo -e "${info} Process pulled from: https://kifarunix.com/install-and-setup-gvm-11-on-ubuntu-20-04/"
+
 apt update
 apt upgrade
 useradd -r -d /opt/gvm -c "GVM User" -s /bin/bash gvm
@@ -16,7 +50,7 @@ python3-pip texlive-fonts-recommended texlive-latex-extra --no-install-recommend
 
 ## Yarn Install
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+echo -e "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 
 
 ## Update again
@@ -95,11 +129,11 @@ ldconfig
 
 cp /tmp/gvm-source/openvas/config/redis-openvas.conf /etc/redis/
 chown redis:redis /etc/redis/redis-openvas.conf
-echo "db_address = /run/redis-openvas/redis.sock" > /opt/gvm/etc/openvas/openvas.conf
+echo -e "db_address = /run/redis-openvas/redis.sock" > /opt/gvm/etc/openvas/openvas.conf
 chown gvm:gvm /opt/gvm/etc/openvas/openvas.conf
 usermod -aG redis gvm
-echo "net.core.somaxconn = 1024" >> /etc/sysctl.conf
-echo 'vm.overcommit_memory = 1' >> /etc/sysctl.conf
+echo -e "net.core.somaxconn = 1024" >> /etc/sysctl.conf
+echo -e 'vm.overcommit_memory = 1' >> /etc/sysctl.conf
 sysctl -p
 
 ## To avoid creation of latencies and memory usage issues with Redis, disable Linux Kernel’s support for Transparent Huge Pages (THP). To easily work around this, create a systemd service unit for this purpose.
@@ -111,7 +145,7 @@ Description=Disable Kernel Support for Transparent Huge Pages (THP)
 
 [Service]
 Type=simple
-ExecStart=/bin/sh -c "echo 'never' > /sys/kernel/mm/transparent_hugepage/enabled && echo 'never' > /sys/kernel/mm/transparent_hugepage/defrag"
+ExecStart=/bin/sh -c "echo -e 'never' > /sys/kernel/mm/transparent_hugepage/enabled && echo -e 'never' > /sys/kernel/mm/transparent_hugepage/defrag"
 
 [Install]
 WantedBy=multi-user.target
@@ -124,13 +158,13 @@ systemctl enable --now disable_thp
 systemctl enable --now redis-server@openvas
 
 ## Update Sudo File
-echo "gvm ALL = NOPASSWD: /opt/gvm/sbin/openvas" > /etc/sudoers.d/gvm
+echo -e "gvm ALL = NOPASSWD: /opt/gvm/sbin/openvas" > /etc/sudoers.d/gvm
 
 visudo
 Defaults secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/opt/gvm/sbin"
 
 ###
-echo "gvm ALL = NOPASSWD: /opt/gvm/sbin/gsad" >> /etc/sudoers.d/gvm
+echo -e "gvm ALL = NOPASSWD: /opt/gvm/sbin/gsad" >> /etc/sudoers.d/gvm
 
 ### 
 

