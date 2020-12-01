@@ -4,7 +4,8 @@
 # Note: Works on Ubuntu 20.04
 ######## TODO ########################
 
-# 
+# Add "echo" Install status messages
+# Update vim tasks to take place automaticly 
 
 ######################################
 
@@ -30,8 +31,9 @@ usage(){
 }
 
 
-echo -e "${info} Ubuntu 20.04 Greenbone GVM 11 Install Script"
-echo -e "${info} Process pulled from: https://kifarunix.com/install-and-setup-gvm-11-on-ubuntu-20-04/"
+echo -e "$info Ubuntu 20.04 Greenbone GVM 11 Install Script"
+echo -e "$info Process pulled from: https://kifarunix.com/install-and-setup-gvm-11-on-ubuntu-20-04/"
+
 
 apt update
 apt upgrade
@@ -113,11 +115,12 @@ make install
 
 ### If you encounter the error, ...error: ‘pcap_lookupdev’ is deprecated: use 'pcap_findalldevs'... while compiling openvas, edit the CMakeLists.txt file and replace the line as shown below.
 
-vim ../../openvas/CMakeLists.txt
-...
-#set (CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} ${COVERAGE_FLAGS}")
-set (CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -Werror -Wno-error=deprecated-declarations")
-...
+echo -e "$alert vim ../../openvas/CMakeLists.txt
+	...
+	#set (CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} ${COVERAGE_FLAGS}")
+	set (CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -Werror -Wno-error=deprecated-declarations")
+	...
+	"
 
 # rerun make install
 
