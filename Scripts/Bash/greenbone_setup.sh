@@ -80,9 +80,9 @@ apt install postgresql postgresql-contrib postgresql-server-dev-all &
 echo -e "$done Complete"
 
 echo -e "$info creating Users and DB"
-sudo -Hiu postgres &
-createuser gvm &
-createdb -O gvm gvmd &
+sudo -Hiu postgres 
+createuser gvm
+createdb -O gvm gvmd 
 
 psql gvmd
 create role dba with superuser noinherit;
