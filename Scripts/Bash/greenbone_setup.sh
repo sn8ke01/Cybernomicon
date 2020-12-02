@@ -34,37 +34,55 @@ usage(){
 echo -e "$info Ubuntu 20.04 Greenbone GVM 11 Install Script"
 echo -e "$info Process pulled from: https://kifarunix.com/install-and-setup-gvm-11-on-ubuntu-20-04/"
 
+echo -e "$info APT Update"
+apt update &
 
-apt update
-apt upgrade
-useradd -r -d /opt/gvm -c "GVM User" -s /bin/bash gvm
-mkdir /opt/gvm
-chown gvm:gvm /opt/gvm
+echo -e "$info APT Upgrade"
+apt upgrade &
+
+echo -e "$info Adding user: gvm"
+useradd -r -d /opt/gvm -c "GVM User" -s /bin/bash gvm &
+mkdir /opt/gvm &
+chown gvm:gvm /opt/gvm &
+echo -e "$done User added"
+
 
 ## Requird Build Tools
+echo -e "$info Installing all required packages."
+echo -e "$info This is a lot so it could take some time."
 apt install gcc g++ make bison flex libksba-dev curl redis libpcap-dev \
 cmake git pkg-config libglib2.0-dev libgpgme-dev nmap libgnutls28-dev uuid-dev \
 libssh-gcrypt-dev libldap2-dev gnutls-bin libmicrohttpd-dev libhiredis-dev \
 zlib1g-dev libxml2-dev libradcli-dev clang-format libldap2-dev doxygen \
 gcc-mingw-w64 xml-twig-tools libical-dev perl-base heimdal-dev libpopt-dev \
 libsnmp-dev python3-setuptools python3-paramiko python3-lxml python3-defusedxml python3-dev gettext python3-polib xmltoman \
-python3-pip texlive-fonts-recommended texlive-latex-extra --no-install-recommends xsltproc
+python3-pip texlive-fonts-recommended texlive-latex-extra --no-install-recommends xsltproc &
+echo -e "$done Packages installed"
 
 ## Yarn Install
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-echo -e "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-
+echo -e "$info Adding Yarn repo and keys"
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - &
+echo -e "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list &
+echo -e "$done Complete"
 
 ## Update again
-apt update 
-apt install yarn -y
+echo -e "$info APT Update to get Yarn Repo"
+apt update &
+echo -e "$done Complete"
+
+echo -e "$info Installing Yarn"
+apt install yarn -y &
+echo -e "$done Complete"
 
 ## Postgresql Install
-apt install postgresql postgresql-contrib postgresql-server-dev-all
+echo -e "$info Installing Postgresql"
+apt install postgresql postgresql-contrib postgresql-server-dev-all &
+echo -e "$done Complete"
 
-sudo -Hiu postgres
-createuser gvm
-createdb -O gvm gvmd
+echo -e "$info creating Users and DB"
+sudo -Hiu postgres &
+createuser gvm &
+createdb -O gvm gvmd &
 
 psql gvmd
 create role dba with superuser noinherit;
